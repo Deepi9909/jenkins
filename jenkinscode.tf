@@ -20,7 +20,7 @@ resource "azurerm_network_interface" "main" {
   ip_configuration {
     name                          = "testconfiguration1"
     subnet_id                     = "/subscriptions/2ed1a4b1-8d67-48fb-8ef6-0d8fa4ab6a5d/resourceGroups/MarCCP2022-sandbox/providers/Microsoft.Network/virtualNetworks/TempSandboxVnet/subnets/first"
-    private_ip_address            = "10.2.1.14"
+    private_ip_address            = "10.2.1.13"
     private_ip_address_allocation = "Static"
     public_ip_address_id          = azurerm_public_ip.public_ip.id
 
